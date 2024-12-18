@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling with Aesthetic Background */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://source.unsplash.com/1920x1080/?nature,abstract') no-repeat center center/cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        @keyframes moveBackground {
+            from {
+                transform: translateY(-20px);
+            }
+
+            to {
+                transform: translateY(20px);
+            }
+        }
+
+        /* Photo Container */
+        .photo-container {
+            width: 150px;
+            height: 150px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Personal Information */
+        .info h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .info p {
+            font-size: 1.2em;
+            color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            font-size: 0.8em;
+            color: #f0f0f0;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            text-align: left;
+            font-family: 'Arial', sans-serif;
+            max-width: 840px;
+            /* Limit text width for readability */
+            background: rgba(22, 22, 22, 0.6);
+            /* Add subtle background for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+            /* Smooth transition for hover effect */
+        }
+
+        .intro:hover {
+            background: rgba(22, 22, 22, 0.6);
+            /* Darker background on hover */
+            transform: scale(1.05);
+            /* Slight zoom effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Buttons Section */
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            padding: 12px 25px;
+            font-size: 1em;
+            text-decoration: none;
+            color: #333;
+            background: linear-gradient(to right, #f0f0f0, #dcdcdc);
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .buttons a:hover {
+            background: linear-gradient(to right, #ddd, #bbb);
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            margin-top: 40px;
+        }
+
+        .portfolio h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .portfolio-items {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .portfolio-items p {
+            padding: 10px;
+            text-align: center;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-items img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .portfolio-items p:hover {
+            transform: scale(1.1);
+        }
+
+        .portfolio-items p img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- Photo Section -->
+    <div class="photo-container">
+        <p><img src="my_image.jpg" alt="Passport Photo"></p>
+    </div>
+    <div class="info">
+        <h1>Yash Soni &#128104;&#8205;&#128187;</h1>
+        <p>Web Developer | Competitive Programmer</p>
+    </div>
+
+    <!-- Personal Information -->
+    <div class="intro">
+        <p>Hi! I'm Yash, a passionate web developer with a strong interest in competitive programming and
+            problem-solving. I'm constantly looking for opportunities to learn and grow, and I believe in the power
+            of technology to transform the world.</p>
+            <div class="buttons">
+                <a href="https://leetcode.com/yourprofile" target="_blank">LeetCode Profile</a>
+                <a href="mailto:your-email@example.com">Contact Me</a>
+            </div>
+    </div>
+    <!-- Buttons for LeetCode and Email -->
+
+    <!-- Portfolio Section -->
+    <div class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-items">
+            <p>Assignments <br> <br><img src="download.png" alt="Project 1"></p>
+            <p>Projects<br> <br><img src="download.jpeg" alt="Project 2"></p>
+            <p>GitHub <br> <br> <img src="github.jpeg" alt=""></p>
+        </div>
+    </div>
+</body>
+
+</html>
